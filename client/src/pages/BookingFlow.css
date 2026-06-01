@@ -1,0 +1,192 @@
+.booking-container {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.booking-card {
+    background: white;
+    padding: 40px;
+    border-radius: var(--radius-card);
+    border: 1px solid var(--border);
+    width: 100%;
+    max-width: 600px;
+}
+
+.booking-header {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.steps-indicator {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.step-dot {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: var(--text-muted);
+    position: relative;
+}
+
+.step-dot.active {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: rgba(37, 99, 235, 0.05);
+}
+
+.step-dot.done {
+    background: var(--success);
+    border-color: var(--success);
+    color: white;
+}
+
+.doctor-sm-card {
+    background: #f8fafc;
+    padding: 16px;
+    border-radius: var(--radius-button);
+    text-align: center;
+}
+
+.doctor-sm-card h4 {
+    margin-bottom: 4px;
+}
+
+.doctor-sm-card span {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.step-content h3 {
+    margin-bottom: 24px;
+    font-size: 1.5rem;
+}
+
+.slots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.slot-btn {
+    padding: 12px;
+    border: 1px solid var(--border);
+    background: white;
+    border-radius: var(--radius-button);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.slot-btn.active {
+    background: var(--primary);
+    color: white;
+    border-color: var(--primary);
+}
+
+.step-content textarea {
+    width: 100%;
+    height: 150px;
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-button);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    resize: none;
+}
+
+.file-upload-area {
+    border: 2px dashed var(--border);
+    padding: 40px;
+    border-radius: var(--radius-button);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    position: relative;
+    transition: var(--transition);
+}
+
+.file-upload-area:hover {
+    border-color: var(--primary);
+    background: #f1f5f9;
+}
+
+.file-upload-area input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.file-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f8fafc;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.file-item button {
+    margin-left: auto;
+    background: none;
+    border: none;
+    color: var(--danger);
+    font-size: 1.2rem;
+}
+
+.success-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.booking-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.btn-secondary {
+    background: white;
+    border: 1px solid var(--border);
+    padding: 12px 24px;
+    border-radius: var(--radius-button);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
